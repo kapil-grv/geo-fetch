@@ -1,28 +1,14 @@
-# [Start Bootstrap - Business Frontpage](https://startbootstrap.com/template/business-frontpage/)
+# [Geo-Fetch: Web GUI](http://localhost:3000/ip2loc.html)
 
-[Business Frontpage](https://startbootstrap.com/template/business-frontpage/) is a basic business website template for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
-
-## Preview
-
-[![Business Frontpage Preview](https://assets.startbootstrap.com/img/screenshots/templates/business-frontpage.png)](https://startbootstrap.github.io/startbootstrap-business-frontpage/)
-
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-business-frontpage/)**
-
-## Status
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-business-frontpage/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-business-frontpage.svg)](https://www.npmjs.com/package/startbootstrap-business-frontpage)
+Geo-Fetch is a Web GUI that provides a number of web based quick geospatial services.
 
 ## Download and Installation
 
 To begin using this template, choose one of the following options to get started:
 
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template/business-frontpage/)
-* Install via npm: `npm i startbootstrap-business-frontpage`
-* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-business-frontpage.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-business-frontpage)
-
-## Usage
+* Download the latest release
+* Clone the repo: `git clone https://github.com/kapil-grv/geo-fetch.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/kapil-grv/geo-fetch.git)
 
 ### Basic Usage
 
@@ -45,31 +31,13 @@ Clone the source files of the theme and navigate into the theme's root directory
 
 You must have npm installed in order to use this build environment.
 
-### Contact Form
-
-The contact form available with this theme is prebuilt to use [SB Forms](https://startbootstrap.com/solution/contact-forms).
-SB Forms is a simple form solution for adding functional forms to your theme. Since this theme is prebuilt using our
-SB Forms markup, all you need to do is sign up for [SB Forms on Start Bootstrap](https://startbootstrap.com/solution/contact-forms).
-
-After signing up you will need to set the domain name your form will be used on, and you will then see your
-access key. Copy this and paste it into the `data-sb-form-api-token='API_TOKEN'` data attribute in place of
-`API_TOKEN`. That's it! Your forms will be up and running!
-
-If you aren't using SB Forms, simply delete the custom data attributes from the form, and remove the link above the
-closing `</body>` tag to SB Forms.
-
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-business-frontpage/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/template/business-frontpage/).
+Have a bug or an issue with this template? [Open a new issue](https://github.com/kapil-grv/geo-fetch/issues) here on GitHub
 
 ## About
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* <https://startbootstrap.com>
-* <https://twitter.com/SBootstrap>
-
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
+Start Bootstrap was used to create this whic was created and is maintained by **[David Miller](https://davidmiller.io/)**.
 
 * <https://davidmiller.io>
 * <https://twitter.com/davidmillerhere>
@@ -78,5 +46,7 @@ Start Bootstrap was created by and is maintained by **[David Miller](https://dav
 Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
 ## Copyright and License
+
+Modified the below code:
 
 Copyright 2013-2023 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE) license.
