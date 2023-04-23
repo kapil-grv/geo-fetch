@@ -1,0 +1,124 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Geo-Fetch
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Bootstrap icons
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css')
+        link(href='css/styles.css', rel='stylesheet')
+        
+    body
+
+        // Unavailable Popup
+        #error-popup.popup.hidden
+            p Data Unavailable !
+
+        // Responsive navbar
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+            .container.px-5
+                a.navbar-brand(href='index.html') Geo-Fetch
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+                        li.nav-item
+                            a.nav-link(href='index.html') Home
+                        li.nav-item
+                            a.nav-link(href='https://kapilgrv.in', target='_blank') About
+                        li.nav-item
+                            a.nav-link(href='contact.html') Contact
+                        li.nav-item
+                            a.nav-link(href='services.html') Services
+
+        // Header
+        header.bg-dark.py-5
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-lg-6
+                        .text-center.my-5
+                            h1.display-5.fw-bolder.text-white.mb-2 IP to Geo-Location
+                            p.lead.text-white-50.mb-4 Get location details of the IP based. Works on both IPV4 and IPV6. Read below for more details on how this works.
+                            form(style="width: 100%;")
+                                input(type="text", id="inputIp", placeholder="Please enter IPV4 or IPV6 here", style="width: 51%; text-align: center;")
+                                br
+                                br
+                            .d-grid.gap-3.d-sm-flex.justify-content-sm-center
+                                a.btn.btn-primary.btn-lg.px-4.me-sm-3(onclick='fetchLocDetailsByIP()') Fetch Details
+                                a.btn.btn-outline-light.btn-lg.px-4(href='#features') Learn More
+
+        // Response section
+        section#response-section.py-5.border-bottom(style="display: none;")
+            .container.px-5.my-5
+                .row.gx-5
+                    .col-lg-12.mb-5.mb-lg-0
+                        h2.h4.fw-bolder Location details
+                        br
+                        div#map
+
+        // Features section
+        section#features.py-5.border-bottom
+            .container.px-5.my-5
+                .row.gx-5
+                    .col-lg-10.mb-5.mb-lg-0
+                        .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
+                            i.bi.bi-collection
+                        h2.h4.fw-bolder IP Geolocation
+                        p
+                            | IP to location is the process of determining the geographic location of an Internet Protocol (IP) address. This information can be used for a variety of purposes, such as targeted advertising, content delivery, security, and fraud prevention.
+                            br
+                            br
+                            | There are several ways to convert an IP address to a location, and the technique used here is using a geolocation database.
+                            br
+                            br
+                            | There are several commercial and free geolocation databases available, such as MaxMind, IP2Location, and GeoLite. These databases contain mappings between IP addresses and their corresponding locations based on various factors, including IP routing and internet service provider (ISP) information.
+                            br
+                            br
+                            strong It's important to note that IP-to-location conversions are not always accurate, as IP addresses can be assigned to ISPs that serve a wide geographic area or can be hidden behind a proxy or VPN, making it appear as if the user is in a different location.
+                        a.text-decoration-none(href='api.html')
+                            | Get API access for bulk operation / Automation
+                            i.bi.bi-arrow-right
+
+        // Contact section
+        section.bg-light.py-5
+            .container.px-5.my-5.px-5
+                .text-center.mb-5
+                    .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
+                        i.bi.bi-envelope
+                    h2.fw-bolder Get in touch
+                    p.lead.mb-0 Would love to hear from you
+                    a(href="mailto:kapilgrv@gmail.com") Send Email
+
+        // Footer
+        footer.py-5.bg-dark
+            .container.px-5
+                p.m-0.text-center.text-white Any feedback or collaboration initiatives are appreciated
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js')
+        script(src='js/scripts.js')
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        //- script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js") 
+        script(src="https://requirejs.org/docs/release/2.3.5/minified/require.js")

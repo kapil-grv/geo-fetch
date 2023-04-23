@@ -1,0 +1,110 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Geo-Fetch
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Bootstrap icons
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body
+
+        // Responsive navbar
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+            .container.px-5
+                a.navbar-brand(href='#!') Geo-Fetch
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+                        li.nav-item
+                            a.nav-link.active(aria-current='page', href='#!') Home
+                        li.nav-item
+                            a.nav-link(href='https://kapilgrv.in', target='_blank') About
+                        li.nav-item
+                            a.nav-link(href='contact.html') Contact
+                        li.nav-item
+                            a.nav-link(href='services.html') Services
+
+        // Header
+        header.bg-dark.py-5
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-lg-6
+                        .text-center.my-5
+                            h1.display-5.fw-bolder.text-white.mb-2 Fetch your Geo-Spatial needs online for free
+                            p.lead.text-white-50.mb-4 Providing a range of Geo-Spatial solutions for one-time needs and via APIs for bulk programmatic needs.  
+                            .d-grid.gap-3.d-sm-flex.justify-content-sm-center
+                                a.btn.btn-primary.btn-lg.px-4.me-sm-3(href='#features') Get Started
+                                a.btn.btn-outline-light.btn-lg.px-4(href='about.html') Learn More
+
+        // Features section
+        section#features.py-5.border-bottom
+            .container.px-5.my-5
+                .row.gx-5
+                    .col-lg-4.mb-5.mb-lg-0
+                        .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
+                            i.bi.bi-collection
+                        h2.h4.fw-bolder IP Geo-Location
+                        p
+                            | IP Geo-Location is the process of finding the geographic location of an IP address. Get location details of the an IP address. Works on both IPV4 and IPV6 addresses.
+                        a.text-decoration-none(href='ip2loc.html')
+                            | Read More | Access Online
+                            i.bi.bi-arrow-right
+                    .col-lg-4.mb-5.mb-lg-0
+                        .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
+                            i.bi.bi-building
+                        h2.h4.fw-bolder Reverse-Geocoding
+                        p
+                            | Reverse geocoding is the process of converting geographic coordinates (latitude and longitude) into a human-readable address, such as a street address, city, or country.
+                        a.text-decoration-none(href='#!')
+                            | Read More | Access Online
+                            i.bi.bi-arrow-right
+                    .col-lg-4
+                        .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
+                            i.bi.bi-toggles2
+                        h2.h4.fw-bolder Altitude / Elevation
+                        p
+                            | Altitude or elevation refers to the height of an object or location above a particular reference level (such as sea level), at a specific location (latitude and longitude).
+                        a.text-decoration-none(href='#!')
+                            | Read More | Access Online
+                            i.bi.bi-arrow-right
+
+        // Contact section
+        section.bg-light.py-5
+            .container.px-5.my-5.px-5
+                .text-center.mb-5
+                    .feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3
+                        i.bi.bi-envelope
+                    h2.fw-bolder Get in touch
+                    p.lead.mb-0 Would love to hear from you
+                    a(href="mailto:kapilgrv@gmail.com") Send Email
+
+        // Footer
+        footer.py-5.bg-dark
+            .container.px-5
+                p.m-0.text-center.text-white Any feedback or collaboration initiatives are appreciated
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        //- script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        script(src="https://code.jquery.com/jquery-3.6.0.min.js") 
+        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js") 
